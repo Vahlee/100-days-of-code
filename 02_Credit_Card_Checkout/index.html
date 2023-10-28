@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bebas+Neue&family=Borel&family=Caveat&family=Comic+Neue&family=DM+Serif+Display:ital@1&family=Dosis:wght@800&family=Libre+Baskerville&family=Montserrat&family=Open+Sans:wght@300&family=Pacifico&family=Pangolin&family=Raleway&display=swap" rel="stylesheet">   <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            max-width: 25rem;
+            width: 100%;        }
+
+        p.blue {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkblue;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5%;
+
+        }
+
+        span {
+            color: aqua;
+            font-weight: bolder;
+        }
+
+        p.or {
+            font-size: large;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        body {font-family: 'Montserrat', sans-serif;}
+
+        .button {
+            background-color: #176B87;
+            color: white;
+            border: 0px;
+            border-radius: 5%;
+            height: 50px;
+        }
+
+        .secure {
+            font-weight: bolder;
+            text-align: center;
+        }
+        .card-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card-container">
+    <div class="card">
+        <img src=".//shirt.png" class="card-img-top" alt="checkout">
+        <div>
+            <p class="blue">Checkout with Pay<span>Pal</span></p>
+            <hr>
+            <p class="or">OR</p>
+        </div>
+        <div class="my-3">
+            <div class="form-check mx-2">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check mx-2">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+        </div>
+        <div class="row gy-3">
+            <div class="col-md-12">
+                <label for="cc-name" class="form-label">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="Emu Oghenemaro" required="">
+                <small class="form-text text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                    Name on card is required
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="cc-number" class="form-label">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="xxxx xxxx xxxx" required="">
+                <div class="invalid-feedback">
+                    Credit card number is required
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="cc-expiration" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="02/24" required="">
+                <div class="invalid-feedback">
+                    Expiration date required
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="123" required="">
+                <div class="invalid-feedback">
+                    Security code required
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <p class="secure"><svg xmlns="http://www.w3.org/2000/svg" height="20" fill="darkcolor" class="lock" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+        </svg> Secure credit card payment</p>
+        <button class="button w-100 btn-outline-light btn-lg" type="submit">Continue to checkout</button>
+    </div>
+</div>
+</div>
+<footer class="my-5 py-5 text-body-secondary text-center text-small">
+    <p class="mb-1">© 2023 Sureshop</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Share</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+          
+        }
+
+        .social img {
+            height: 80px;
+            width: 80px;
+            margin: 0 10px; 
+            border-radius: 20px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+            background-color: green;
+            color: white;
+            font-size: 1rem;
+            border-radius: 10%;
+            border: 0;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .social img {
+                height: 60px;
+                width: 60px;
+                margin: 0 8px;
+            }
+
+            button {
+                height: 40px;
+                width: 80px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>Share with Friends</h1>
+    <div class="social">
+        <img src="./facebook-icon.png" alt="facebook-icon">
+        <img src="./insta-icon.png" alt="insta-icon">
+        <img src="./linkedin.png" alt="linkedin-icon">
+        <img src="./x-icon.png" alt="x-icon">
+    </div>
+    <div class="button">
+        <button>Share</button>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bebas+Neue&family=Borel&family=Caveat&family=Comic+Neue&family=DM+Serif+Display:ital@1&family=Dosis:wght@800&family=Libre+Baskerville&family=Montserrat&family=Open+Sans:wght@300&family=Pacifico&family=Pangolin&family=Raleway&family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        .container-fluid {
+            background-color: brown;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar-brand {
+            font-weight: bolder;
+            color: blanchedalmond;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1rem;
+        }
+
+        .button {
+            background-color: blanchedalmond;
+        }
+
+        .navbar {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: burlywood;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: brown;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .shop {
+            background-color: brown;
+            color: white;
+        }
+
+        .forte-circle {
+            background-color: orangered;
+            border-radius: 50%;
+            height: 10px;
+        }
+
+        .body-text {
+            padding: 20px;
+        
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; 
+            }
+            .container-fluid {
+                padding: 0; 
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                <a class="navbar-brand col-lg-3 me-0" href="#"><img src="./icon.png" alt="beardpage-icon" height="50">FacialForte Pro</a><div class="forte-circle"></div>
+                <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">How It Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Product Catalog</a></li>
+                            <li><a class="dropdown-item" href="#">Product Details</a></li>
+                            <li><a class="dropdown-item" href="#">Bundle Offers or Packages</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                    <button class="button btn btn outline-light">Testimonials</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-text">
+        <div class="container col-xxl-8 px-4 pt-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <img src="./beard-gif.gif" class="d-block mx-lg-auto img-fluid" alt="Beardless-beard-before-after" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">Welcome to FacialForte, your trusted source for premium beard enhancer products.</p>
+                    <h1>Achieve Beard Excellence with FacialForte Pro</h1>
+                    <p class="lead">Our carefully crafted beard enhancers are designed to help you achieve a fuller, thicker, and healthier beard. Discover the secret to a confident and distinguished look with FacialForte Pro.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="shop btn btn-outline-secondary btn-lg px-4 me-md-2">Shop Now</button>
+                        <button type="button" class="shop btn btn-outline-secondary btn-lg px-4">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
