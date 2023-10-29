@@ -45,6 +45,7 @@ button {
      background-color: rgb(19, 185, 19);
      color:white;
      border-radius: 10px;
+     cursor:pointer;
 }
 p {
     font-size: 1.3rem;
