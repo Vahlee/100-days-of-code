@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breadcrumbs</title>
     <style>
-     .items {
+      .items {
         display:flex;
         justify-content: space-around;
-        gap:10px;
-        margin-top: 2rem;
+        gap:20px;
      }
      .container {
-        background-color:#dee2e6 ;
+        background-color:#acb4bc96 ;
         height:70px;
         font-size: 1.5rem;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         border-radius: 10px;
+        padding:10px
      }
      .items * {
         margin-top: 1rem;
         
      }
      body {
-        background-image: url(welcome\ home.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
+        width:100%;
+        background-color:#dee2e6;
      }
      .btn {
         text-align: center;
@@ -38,16 +35,71 @@
       #one {
         color:red;
       }
- </style>
+      .content {
+        display:flex;
+        gap:21px;
+        justify-content: center;
+        flex-wrap: wrap;
+        color:blue;
+    }
+
+     
+      .image {
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        flex-direction: column;
+      }
+      .image p {
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding:10px
+      }
+      button {
+        height:50px;
+        width:150px;
+        text-align: center;
+        border:0;
+        background-color: green;
+        border-radius: 10px;
+        color:white;
+        font-size: 1rem;
+      }
+    
+   </style>
 </head>
 <body>
-    <div class="container">
-       <div class="items">
-        <div class="btn"><a href="index.html" id="one">Home</a></div>
-          <div class="btn"><a href="#">Products</a></div>
-          <div class="btn"><a href="#"> Services</a></div>
-          <div class="btn"><a href="#">Deals</a></div>
+  <div class="breadcrumbs">
+     <div class="container">
+         <div class="items">
+             <div class="btn">Categories</div>
+             <div class="btn"><a href="#" id="one">Home</a></div>
+              <div class="btn"><a href="#">Office</a></div>
+             <div class="btn"><a href="#">School</a></div>
+         </div>
        </div>
-    </div>
+     <div class="content">
+        <div><p class="list"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+          </svg></p>
+        </div>
+        <div><p>||</p></div>
+        <div class="list"><p>Categories </p></div>
+        <div><p>||</p></div>
+        <div class="list"><p>Home </p></div>
+        <div><p>||</p></div>
+        <div class="list"><p>Home Appliances </p></div>
+        <div><p>||</p></div>
+        <div class="list"><p>Hisense 93L Single Door No Frost Refrigerator</p></div>
+     </div>
+       <div class="image">
+           <img src="refrigerator.png" alt="refrigerator" height="700">
+           <div><p>Hisense 93L Single Door No Frost Refrigerator</p></div>
+           <div class="btn"><button>Check Price</button></div> 
+       </div>
+ </div>
 </body>
 </html>
