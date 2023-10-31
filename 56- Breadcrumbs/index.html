@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumbs</title>
+    <style>
+     .items {
+        display:flex;
+        justify-content: space-around;
+        gap:10px;
+        margin-top: 2rem;
+     }
+     .container {
+        background-color:#dee2e6 ;
+        height:70px;
+        font-size: 1.5rem;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border-radius: 10px;
+     }
+     .items * {
+        margin-top: 1rem;
+        
+     }
+     body {
+        background-image: url(welcome\ home.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+     }
+     .btn {
+        text-align: center;
+     }
+     a {
+        color:black;
+      }
+      #one {
+        color:red;
+      }
+ </style>
+</head>
+<body>
+    <div class="container">
+       <div class="items">
+        <div class="btn"><a href="index.html" id="one">Home</a></div>
+          <div class="btn"><a href="#">Products</a></div>
+          <div class="btn"><a href="#"> Services</a></div>
+          <div class="btn"><a href="#">Deals</a></div>
+       </div>
+    </div>
+</body>
+</html>
