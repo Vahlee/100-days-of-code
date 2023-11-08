@@ -49,6 +49,10 @@
         img {
             height:150px;
         }
+        .Beginner, .Advanced, .Intermediate {
+            height:150px;
+            width:150px
+        }
         button {
             height:50px;
             width:200px;
@@ -64,6 +68,13 @@
             }
             .container {
                 display: block;
+            }
+            .Beginner, .Advanced, .Intermediate {
+                display: flex;
+                justify-content: center;
+            }
+            .center {
+                margin-left: 100px;
             }
         }
 
@@ -81,7 +92,7 @@
                <div class="Intermediate"><img src="intermediate.png" alt="toddler"></div>
                <p class="in">Intermediate</p>
            </div>
-           <div>
+           <div class="center">
               <div class="Advanced"><img src="./advanced.png" alt="advanced"></div>
               <p>Advanced</p>
            </div>
